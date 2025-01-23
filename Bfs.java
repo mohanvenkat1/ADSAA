@@ -15,12 +15,6 @@ class Bfs{
                     q.add(x);
                 }
             }
-            addEdge(adj,1,2);
-            addEdge(adj,0,2);
-            addEdge(adj,1,3);
-            addEdge(adj,2,4);*/
-            printGraph(adj);
-    
         }
     }
     static void addEdge(List<List<Integer>>adj,int u,int v){
@@ -33,12 +27,6 @@ class Bfs{
             System.out.print(i + ": ");
             for (int j : adj.get(i)) {
                 System.out.print(j + " ");
-                addEdge(adj,1,2);
-                addEdge(adj,0,2);
-                addEdge(adj,1,3);
-                addEdge(adj,2,4);*/
-                printGraph(adj);
-        
             }
             System.out.println();
         }
@@ -51,12 +39,6 @@ class Bfs{
         List<List<Integer>> adj = new ArrayList<>(V);
         for (int i = 0; i < V; i++) {
             adj.add(new ArrayList<>());
-            addEdge(adj,1,2);
-            addEdge(adj,0,2);
-            addEdge(adj,1,3);
-            addEdge(adj,2,4);*/
-            printGraph(adj);
-    
         }
 
         System.out.println("Enter the number of edges: ");
